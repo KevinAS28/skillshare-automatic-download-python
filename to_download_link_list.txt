@@ -1,4 +1,3 @@
-https://www.skillshare.com/classes/Visual-Journaling-Drawing-Your-Feelings/250509687?via=show
 https://www.skillshare.com/classes/Apache-Spark-3-with-Scala-Hands-On-with-Big-Data/95124690
 https://www.skillshare.com/classes/Software-Engineering-101-Learn-the-Software-Development-Cycle-for-Better-Programming/23622313?via=search-layout-grid
 https://www.skillshare.com/classes/Learn-Assembly-Programming-Language-Fast/1724528447?via=search-layout-grid
@@ -9,7 +8,3 @@ https://www.skillshare.com/classes/DevOps-Project-CICD-with-Git-Jenkins-Ansible-
 https://www.skillshare.com/classes/Docker-MasterClass-Docker-Docker-Compose-Docker-Swarm-for-DevOps/275359306?via=search-layout-grid
 https://www.skillshare.com/classes/Adobe-Photoshop-CC-–-Essentials-Training-Course/1810443793?via=browse-rating-graphic-design
 https://www.skillshare.com/classes/Color-Theory-Get-Inspired-by-Color/1952660760?via=browse-popular-graphic-design
-https://www.skillshare.com/classes/Productivity-for-Designers-11-Tips-to-Revamp-Your-Workflow-with-DKNG/171045174?via=browse-popular-graphic-design
-https://www.skillshare.com/classes/Data-Science-and-Machine-Learning-with-Python-Hands-On/1263657127?via=search-layout-grid
-https://www.skillshare.com/classes/Building-Recommender-Systems-with-Machine-Learning-and-AI/1493261308
-https://www.skillshare.com/classes/Deep-Learning-and-Neural-Networks-with-Python/45606211

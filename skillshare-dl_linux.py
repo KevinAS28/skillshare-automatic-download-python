@@ -30,8 +30,9 @@ def initializeChrome():
 	chrome_options = webdriver.ChromeOptions()
 	chrome_options.add_argument("--proxy-server={0}".format(proxy.proxy))
 	chrome_options.add_argument("--ignore-certificate-errors")
-
-	driver = webdriver.Chrome(str(Path("./binaries/chromedriver").absolute()), options = chrome_options)
+	webdriver_path = str(Path("./binaries/chromedriver81").absolute())
+	print(webdriver_path)
+	driver = webdriver.Chrome(executable_path=webdriver_path, options = chrome_options)
 	print('initialized Chrome window!')
 
 '''
@@ -252,9 +253,8 @@ def main():
 					
 					#make sure the login session not timeout
 					driver.get(home_url)
-					time.sleep(2)
 					driver.refresh()
-					time.sleep(3)
+					time.sleep(30)
 
 				print('Lets go more!\n\n')
 

@@ -49,16 +49,19 @@ def repairFilename(filename):
 
 
 def makeDirectoryForCourse(course_title):
-	os.chdir(download_directory)
-	course_title = repairFilename(course_title)
-	if "/" in course_title:
-		course_title.replace("/","-")
-	if not os.path.exists(course_title):
-		os.makedirs(course_title)
-		os.chdir(course_title)
-	else:
-		os.chdir(course_title)
-
+    try:
+        os.chdir(download_directory)
+        course_title = repairFilename(course_title)
+        if "/" in course_title:
+            course_title.replace("/","-")
+        if not os.path.exists(course_title):
+            os.makedirs(course_title)
+            os.chdir(course_title)
+        else:
+            os.chdir(course_title)
+    except Exception as error:
+        print("Error while processing download destination: " + str(e))
+        traceback.print_exc()
 
 makeDirectoryForCourse(json_data['course_title'])
 print('Downloading Course: ' + json_data['course_title'])
@@ -77,7 +80,9 @@ for index in range(len(video_links)):
             print('Error while downloading {} . trying again 5 seconds...'.format(filename))
             traceback.print_exc()
             time.sleep(5)
+            makeDirectoryForCourse(json_data['course_title'])
             
 with open('done', 'w+') as msgs:
     msgs.write('Enjoy...')
-# os.remove(json_file_name)
+
+os.remove(json_file_name)
